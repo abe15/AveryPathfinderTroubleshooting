@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<Job>
+  <Energy>Normal</Energy>
+  <Quantity>1</Quantity>
+  <LabelSize units="Inches" length="1.000" width="1.900" />
+  <Command>Print</Command>
+  <Image id="SampleLabel" version="1">
+    <ImageSize units="inches" x="0.000" y="0.150" height="0.850" width="1.900" origin="BottomLeft" />
+    <Presentation>0</Presentation>
+
+    <Fields count="2">
+
+       <BarcodeField id="PrimaryText">
+                    <Volatile>1</Volatile>
+                    <Origin units="Inches"  x="0.15" y="0.01" />
+                    <BarHeight units="Inches">0.7</BarHeight>
+                    <Type>qr</Type>
+                    <Options model="2" mpclstyle="0" security="2" datamode="1" />
+                    <Data max="37" min="1"/>
+       </BarcodeField>
+
+
+      <TextField id="SecondaryText">
+        <Volatile>1</Volatile>
+        <BoundingBox units="Inches" x="1.1" y="0.01" height="0.9" width=".7" />
+        <Font pointsizeheight="4">Arial</Font>
+        <HorizontalJustification>Center</HorizontalJustification>
+
+        <Data max="37" min="0"/>
+      </TextField>
+
+
+    </Fields>
+  </Image>
+</Job>
+
